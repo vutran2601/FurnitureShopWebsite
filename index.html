@@ -1,281 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniture</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
-    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
-                
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/script.js"></script>
-</head>
-<body>
-    <header
-        class="title-font"
-        style="
-            display: flex;
-            justify-content:
-            space-between;
-            align-items: center;
-            padding: 27px 96px;
-            border-bottom: 1px solid #DBDBDB;
-    ">
-        <div>
-            <img src="assets/images/Furnique.png" width="130px" height="30px">
-        </div>
-        <div style="font-size: 20px;">
-            <span style="margin-right: 52px;">
-                Product
-            </span>
-            <span style="margin-right: 52px;">
-                Service
-            </span>
-            <span style="margin-right: 52px;">
-                Article
-            </span>
-            <span>
-                About Us
-            </span>
-        </div>
-        <div>
-            <img src="assets/images/Bag.png" width="24px" height="24px" style="margin-right: 14px;">
-            <img src="assets/images/User.png" width="24px" height="24px">
-        </div>
-    </header>
-    <div style="margin-top: 93px; margin-bottom: 112px; display: flex; flex-direction: column; align-items: center;">
-        <div style="width: 789px;">
-            <div class="title-font" style="font-size: 72px; line-height: 82px; text-align: center; color: #121212; margin-bottom: 27px;">
-                Transform Your Space, Elevate Your Style.
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Furniture</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"/>
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-sans" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body style="margin: 0;">
+
+        <!-- Header -->
+        <header class="title-font header">
+            <img src="assets/images/Furnique.svg"/>
             </div>
-            <div class="content-font" style="font-size: 20px; line-height: 28px; text-align: center; color: #505050; margin-bottom: 76px;">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="nav-bar-menu">
+                <div>Product</div>
+                <div>Service</div>
+                <div>Article</div>
+                <div>About Us</div>
             </div>
-        </div>
-        <div
-            style="
-                width: 667px;
-                height: 82px;
-                background-color: #F5F5F5;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-        ">
-            <div style="margin-left: 24px; display: flex; align-items: center; justify-content: center; width: 60%;">
-                <img src="assets/images/Search.png" width="24px" height="24px" style="margin-right: 14px;">
-                <input
-                    wd
-                    class="content-font"
-                    type="text"
-                    placeholder="Search your property..."
+            <div class="nav-bar-icon">
+                <img src="assets/images/Bag.svg"/>
+                <img src="assets/images/User.svg"/>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content-page">
+
+            <!-- Page title -->
+            <div class="page-title">
+                <div
+                    class="title-font"
                     style="
-                        height: 30px;
-                        width: 100%;
-                        border: 0px;
-                        background-color: #F5F5F5;
-                        font-size: 20px;
-                ">
-            </div>
-            <button
-                class="title-font"
-                type="button" 
-                style="
-                    width: 163px;
-                    height: 54px;
-                    padding: 12px 28px;
-                    background-color: #D64D00;
-                    margin-right: 14px;
-                    font-weight: bold;
-                    font-size: 22px;
-                    border: 0px;
-                    color: white;
-            ">
-                Search
-            </button>
-        </div>
-    </div>
-    <footer
-        style="
-            background-color: #5C59D4;
-    ">
-        <div style="padding: 129px 153px 60px 154px; background-color: #F2A156;">
-            <div style="display: flex;">
-                <div class="title-font" style="font-size: 34px; color: white; width: 426px; line-height: 42px; margin-right: 40px;">
-                    Subscribe to get attractive offers on our products
+                        font-size: 72px;
+                        line-height: 82px;
+                        text-align: center;
+                        color: #121212;
+                        margin-bottom: 27px;
+                        font-weight: 700;
+                    "
+                >
+                    Transform Your Space, Elevate Your Style.
                 </div>
                 <div
+                    class="content-font"
                     style="
-                        width: 667px;
-                        height: 82px;
-                        background-color: #F5F5F5;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #505050;
+                        margin-bottom: 76px;
+                    "
+                >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                </div>
+            </div>
+
+            <!-- Search property -->
+            <div class="search-property">
+                <div
+                    style="
+                        margin-left: 24px;
                         display: flex;
-                        justify-content: space-between;
                         align-items: center;
-                ">
+                        justify-content: center;
+                        width: 60%;
+                    "
+                >
+                    <img src="assets/images/Search.svg" style="margin-right: 14px;"/>
                     <input
                         class="content-font"
                         type="text"
-                        placeholder="E.g. youremail@mail.com"
+                        placeholder="Search your property..."
                         style="
-                            margin-left: 24px;
                             height: 30px;
-                            width: 60%;
+                            width: 100%;
                             border: 0px;
-                            background-color: #F5F5F5;
+                            background-color: #f5f5f5;
                             font-size: 20px;
-                    ">
-                    <button
-                        class="title-font"
-                        type="button" 
-                        style="
-                            width: 163px;
-                            height: 54px;
-                            padding: 12px 28px;
-                            background-color: #5C59D4;
-                            margin-right: 14px;
-                            font-weight: bold;
-                            font-size: 22px;
-                            border: 0px;
-                            color: white;
-                    ">
-                        Subscribe
-                    </button>
+                        "
+                    />
                 </div>
+                <button
+                    class="title-font"
+                    type="button"
+                    style="
+                        width: 163px;
+                        height: 54px;
+                        padding: 12px 28px;
+                        background-color: #d64d00;
+                        margin-right: 14px;
+                        font-weight: bold;
+                        font-size: 22px;
+                        border: 0px;
+                        color: white;
+                    "
+                >
+                    Search
+                </button>
             </div>
+
+            <!-- Feature images -->
+            <div class="feature-images">
+                <img src="assets/images/Feature/1.svg" style="margin-right: 24px;">
+                <img src="assets/images/Feature/2.svg" style="margin-right: 24px;">
+                <img src="assets/images/Feature/3.svg" style="margin-right: 24px;">
+                <img src="assets/images/Feature/4.svg">
+            </div>
+
+            <!-- Branch logos -->
+            <div class="branch-logos">
+                <!-- Amazon logo -->
+                <img
+                    id="amazon-logo"
+                    src="assets/images/Branch/amazon-color.svg"
+                    width="188px"
+                    height="57px"
+                    style="
+                        filter: brightness(75%) saturate(0);
+                        opacity: 0.5;
+                    "
+                >
+
+                <!-- Google logo -->
+                <img 
+                    id="google-logo"
+                    src="assets/images/Branch/google-color.svg"
+                    width="147.06px"
+                    height="48px"
+                    style="
+                        filter: brightness(75%) saturate(0);
+                        opacity: 0.5;
+                    "
+                >
+
+                <!-- Cocacola logo -->
+                <img 
+                    id="cocacola-logo"
+                    src="assets/images/Branch/cocacola-color.svg"
+                    width="185px"
+                    height="60px"
+                    style="
+                        filter: brightness(75%) saturate(0);
+                        opacity: 0.5;
+                    "
+                >
+
+                <!-- Airbnb logo -->
+                <img 
+                    id="airbnb-logo" 
+                    src="assets/images/Branch/airbnb-color.svg"
+                    width="153.85px"
+                    height="48px"
+                    style="
+                        filter: brightness(75%) saturate(0);
+                        opacity: 0.5;
+                    "
+                >
+
+                <!-- Samsung logo -->
+                <img 
+                    id="samsung-logo" 
+                    src="assets/images/Branch/samsung-color.svg"
+                    width="221px"
+                    height="34px"
+                    style="
+                        filter: brightness(75%) saturate(0);
+                        opacity: 0.5;
+                    "
+                >
+
+                <!-- Javascript to colorize branch logos -->
+                <script>
+                    // Amazon logo
+                    const amazonLogo = document.getElementById("amazon-logo");
+                    amazonLogo.addEventListener('mouseover', function() {
+                        this.style.filter = '';
+                        this.style.opacity = '';
+                    });
+
+                    amazonLogo.addEventListener('mouseout', function() {
+                        this.style.filter = 'brightness(75%) saturate(0)';
+                        this.style.opacity = '0.5';
+                    });
+
+                    // Google logo
+                    const googleLogo = document.getElementById("google-logo");
+                    googleLogo.addEventListener("mouseover", function () {
+                        this.style.filter = '';
+                        this.style.opacity = '';
+                    });
+                    googleLogo.addEventListener("mouseout", function () {
+                        this.style.filter = 'brightness(75%) saturate(0)';
+                        this.style.opacity = '0.5';
+                    });
+
+                    // Cocacola logo
+                    const cocacolaLogo = document.getElementById("cocacola-logo");
+                    cocacolaLogo.addEventListener("mouseover", function () {
+                        this.style.filter = '';
+                        this.style.opacity = '';
+                    });
+                    cocacolaLogo.addEventListener("mouseout", function () {
+                        this.style.filter = 'brightness(75%) saturate(0)';
+                        this.style.opacity = '0.5';
+                    });
+
+                    // Airbnb logo
+                    const airbnbLogo = document.getElementById("airbnb-logo");
+                    airbnbLogo.addEventListener("mouseover", function () {
+                        this.style.filter = '';
+                        this.style.opacity = '';
+                    });
+                    airbnbLogo.addEventListener("mouseout", function () {
+                        this.style.filter = 'brightness(75%) saturate(0)';
+                        this.style.opacity = '0.5';
+                    });
+
+                    // Samsung logo
+                    const samsungLogo = document.getElementById("samsung-logo");
+                    samsungLogo.addEventListener("mouseover", function () {
+                        this.style.filter = '';
+                        this.style.opacity = '';
+                    });
+                    samsungLogo.addEventListener("mouseout", function () {
+                        this.style.filter = 'brightness(75%) saturate(0)';
+                        this.style.opacity = '0.5';
+                    });
+                </script>
+            </div>
+
+            
         </div>
-        <div style="padding: 80px 96px;">
+
+        <!-- Foooter -->
+        <footer style="background-color: #5c59d4">
             <div
                 style="
-                    margin-bottom: 24px;
-                    padding-bottom: 78px;
-                    border-bottom: 1px solid #F5F5F5;
-                    display: flex;
-            ">
-                <div style=" width: 219px; margin-right: 157px">
-                    <img src="assets/images/Logo.png" width="153px" height="48px" style="margin-bottom: 28px;">
-                    <div class="content-font" style="font-size: 18px; color: #F5F5F5; line-height: 26px; letter-spacing: -0.3px;">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    padding: 129px 153px 60px 154px;
+                    background-color: #f2a156;
+                "
+            >
+                <div style="display: flex">
+                    <div
+                        class="title-font"
+                        style="
+                            font-size: 34px;
+                            color: white;
+                            width: 426px;
+                            line-height: 42px;
+                            margin-right: 40px;
+                        "
+                    >
+                        Subscribe to get attractive offers on our products
                     </div>
-                </div>
-                <div style="width: 764px; display: flex; justify-content: space-between;">
-                    <div style="height: 100%;">
-                        <div
-                            class="title-font"
-                            style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                color: #F5F5F5;
-                                margin-bottom: 16px
-                        ">
-                            Category
-                        </div>
-                        <div
+                    <div
+                        style="
+                            width: 667px;
+                            height: 82px;
+                            background-color: #f5f5f5;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        "
+                    >
+                        <input
                             class="content-font"
+                            type="text"
+                            placeholder="E.g. youremail@mail.com"
                             style="
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                color: #F5F5F5;
-                                font-size: 16px;
-                                align-content: space-between;
-                        ">
-                            <div>Living Room</div>
-                            <div>Bed Rom</div>
-                            <div>Kitchen</div>
-                            <div>bath Room</div>
-                        </div>                  
-                    </div>
-                    <div style="height: 100%;">
-                        <div
+                                margin-left: 24px;
+                                height: 30px;
+                                width: 60%;
+                                border: 0px;
+                                background-color: #f5f5f5;
+                                font-size: 20px;
+                            "
+                        />
+                        <button
                             class="title-font"
+                            type="button"
                             style="
-                                font-size: 18px;
+                                width: 163px;
+                                height: 54px;
+                                padding: 12px 28px;
+                                background-color: #5c59d4;
+                                margin-right: 14px;
                                 font-weight: bold;
-                                color: #F5F5F5;
-                                margin-bottom: 16px
-                        ">
-                            Popular Product
-                        </div>
-                        <div
-                            class="content-font"
-                            style="
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                color: #F5F5F5;
-                                font-size: 16px;
-                                align-content: space-between;
-                        ">
-                            <div>Single Sofa Black</div>
-                            <div>Wooden Bookcase</div>
-                            <div>Wooden Chair</div>
-                            <div>Luxury White Bed</div>
-                        </div>                  
-                    </div>
-                    <div style="height: 100%;">
-                        <div
-                            class="title-font"
-                            style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                color: #F5F5F5;
-                                margin-bottom: 16px
-                        ">
-                            Sitemap
-                        </div>
-                        <div
-                            class="content-font"
-                            style="
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                color: #F5F5F5;
-                                font-size: 16px;
-                                align-content: space-between;
-                        ">
-                            <div>Product</div>
-                            <div>Services</div>
-                            <div>Article</div>
-                            <div>About Us</div>
-                        </div>                  
-                    </div>
-                    <div style="height: 100%;">
-                        <div
-                            class="title-font"
-                            style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                color: #F5F5F5;
-                                margin-bottom: 16px
-                        ">
-                            Follow Us
-                        </div>
-                        <div
-                            class="content-font"
-                            style="
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                color: #F5F5F5;
-                                font-size: 16px;
-                                align-content: space-between;
-                        ">
-                            <div>Facebook</div>
-                            <div>Instagram</div>
-                            <div>TikTok</div>
-                            <div>Youtube</div>
-                        </div>                  
+                                font-size: 22px;
+                                border: 0px;
+                                color: white;
+                            "
+                        >
+                            Subscribe
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="content-font" style="font-size: 14px; color: #F5F5F5; text-align: left; line-height: 22px;">
-                © 2023 by Logo Furniture. All rights reserved.
+            <div style="padding: 80px 96px">
+                <div
+                    style="
+                        margin-bottom: 24px;
+                        padding-bottom: 78px;
+                        border-bottom: 1px solid #f5f5f5;
+                        display: flex;
+                    "
+                >
+                    <div style="width: 219px; margin-right: 157px">
+                        <img src="assets/images/Logo.svg" style="margin-bottom: 28px"/>
+                        <div
+                            class="content-font"
+                            style="
+                                font-size: 18px;
+                                color: #f5f5f5;
+                                line-height: 26px;
+                                letter-spacing: -0.3px;
+                            "
+                        >
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                        </div>
+                    </div>
+                    <div
+                        style="
+                            width: 764px;
+                            display: flex;
+                            justify-content: space-between;
+                        "
+                    >
+                        <div style="height: 100%">
+                            <div
+                                class="title-font"
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #f5f5f5;
+                                    margin-bottom: 16px;
+                                "
+                            >
+                                Category
+                            </div>
+                            <div
+                                class="content-font"
+                                style="
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    color: #f5f5f5;
+                                    font-size: 16px;
+                                    align-content: space-between;
+                                "
+                            >
+                                <div>Living Room</div>
+                                <div>Bed Rom</div>
+                                <div>Kitchen</div>
+                                <div>bath Room</div>
+                            </div>
+                        </div>
+                        <div style="height: 100%">
+                            <div
+                                class="title-font"
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #f5f5f5;
+                                    margin-bottom: 16px;
+                                "
+                            >
+                                Popular Product
+                            </div>
+                            <div
+                                class="content-font"
+                                style="
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    color: #f5f5f5;
+                                    font-size: 16px;
+                                    align-content: space-between;
+                                "
+                            >
+                                <div>Single Sofa Black</div>
+                                <div>Wooden Bookcase</div>
+                                <div>Wooden Chair</div>
+                                <div>Luxury White Bed</div>
+                            </div>
+                        </div>
+                        <div style="height: 100%">
+                            <div
+                                class="title-font"
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #f5f5f5;
+                                    margin-bottom: 16px;
+                                "
+                            >
+                                Sitemap
+                            </div>
+                            <div
+                                class="content-font"
+                                style="
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    color: #f5f5f5;
+                                    font-size: 16px;
+                                    align-content: space-between;
+                                "
+                            >
+                                <div>Product</div>
+                                <div>Services</div>
+                                <div>Article</div>
+                                <div>About Us</div>
+                            </div>
+                        </div>
+                        <div style="height: 100%">
+                            <div
+                                class="title-font"
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #f5f5f5;
+                                    margin-bottom: 16px;
+                                "
+                            >
+                                Follow Us
+                            </div>
+                            <div
+                                class="content-font"
+                                style="
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    color: #f5f5f5;
+                                    font-size: 16px;
+                                    align-content: space-between;
+                                "
+                            >
+                                <div>Facebook</div>
+                                <div>Instagram</div>
+                                <div>TikTok</div>
+                                <div>Youtube</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="content-font"
+                    style="
+                        font-size: 14px;
+                        color: #f5f5f5;
+                        text-align: left;
+                        line-height: 22px;
+                    "
+                >
+                    © 2023 by Logo Furniture. All rights reserved.
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
