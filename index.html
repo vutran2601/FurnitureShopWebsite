@@ -5,16 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Furniture</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"/>
-        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-sans" />
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-sans"/>
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/inter">
         <link rel="stylesheet" href="assets/css/styles.css" />
-        <script src="assets/js/script.js"></script>
     </head>
-    <body style="margin: 0;">
-
+    <body>
         <!-- Header -->
-        <header class="title-font header">
+        <header class="header">
             <img src="assets/images/Furnique.svg"/>
-            </div>
             <div class="nav-bar-menu">
                 <div>Product</div>
                 <div>Service</div>
@@ -29,216 +27,568 @@
 
         <!-- Content -->
         <div class="content-page">
-
-            <!-- Page title -->
-            <div class="page-title">
-                <div
-                    class="title-font"
-                    style="
-                        font-size: 72px;
-                        line-height: 82px;
-                        text-align: center;
-                        color: #121212;
-                        margin-bottom: 27px;
-                        font-weight: 700;
-                    "
-                >
-                    Transform Your Space, Elevate Your Style.
+            <!-- Feature -->
+            <div class="feature">
+                <!-- Feature title -->
+                <div class="feature-title">
+                    <div>
+                        Transform Your Space, Elevate Your Style.
+                    </div>
+                    <div>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                    </div>
                 </div>
-                <div
-                    class="content-font"
-                    style="
-                        font-size: 20px;
-                        line-height: 28px;
-                        text-align: center;
-                        color: #505050;
-                        margin-bottom: 76px;
-                    "
-                >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                </div>
-            </div>
 
-            <!-- Search property -->
-            <div class="search-property">
-                <div
-                    style="
-                        margin-left: 24px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 60%;
-                    "
-                >
-                    <img src="assets/images/Search.svg" style="margin-right: 14px;"/>
-                    <input
-                        class="content-font"
-                        type="text"
-                        placeholder="Search your property..."
+                <!-- Feature search -->
+                <div class="feature-search">
+                    <div>
+                        <img src="assets/images/Search.svg" style="margin-right: 14px;"/>
+                        <input type="text" placeholder="Search your property..."/>
+                    </div>
+                    <button type="button">
+                        Search
+                    </button>
+                </div>
+
+                <!-- Feature images -->
+                <div class="feature-images">
+                    <img src="assets/images/Feature/1.svg">
+                    <img src="assets/images/Feature/2.svg">
+                    <img src="assets/images/Feature/3.svg">
+                    <img src="assets/images/Feature/4.svg">
+                </div>
+
+                <!-- Branch logos -->
+                <div class="branch-logos">
+                    <!-- Amazon logo -->
+                    <img
+                        id="amazon-logo"
+                        src="assets/images/Branch/amazon-color.svg"
+                        width="188px"
+                        height="57px"
                         style="
-                            height: 30px;
-                            width: 100%;
-                            border: 0px;
-                            background-color: #f5f5f5;
-                            font-size: 20px;
+                            filter: brightness(75%) saturate(0);
+                            opacity: 0.5;
                         "
-                    />
+                    >
+
+                    <!-- Google logo -->
+                    <img
+                        id="google-logo"
+                        src="assets/images/Branch/google-color.svg"
+                        width="147.06px"
+                        height="48px"
+                        style="
+                            filter: brightness(75%) saturate(0);
+                            opacity: 0.5;
+                        "
+                    >
+
+                    <!-- Cocacola logo -->
+                    <img
+                        id="cocacola-logo"
+                        src="assets/images/Branch/cocacola-color.svg"
+                        width="185px"
+                        height="60px"
+                        style="
+                            filter: brightness(75%) saturate(0);
+                            opacity: 0.5;
+                        "
+                    >
+
+                    <!-- Airbnb logo -->
+                    <img
+                        id="airbnb-logo"
+                        src="assets/images/Branch/airbnb-color.svg"
+                        width="153.85px"
+                        height="48px"
+                        style="
+                            filter: brightness(75%) saturate(0);
+                            opacity: 0.5;
+                        "
+                    >
+
+                    <!-- Samsung logo -->
+                    <img
+                        id="samsung-logo"
+                        src="assets/images/Branch/samsung-color.svg"
+                        width="221px"
+                        height="34px"
+                        style="
+                            filter: brightness(75%) saturate(0);
+                            opacity: 0.5;
+                        "
+                    >
                 </div>
-                <button
-                    class="title-font"
-                    type="button"
-                    style="
-                        width: 163px;
-                        height: 54px;
-                        padding: 12px 28px;
-                        background-color: #d64d00;
-                        margin-right: 14px;
-                        font-weight: bold;
-                        font-size: 22px;
-                        border: 0px;
-                        color: white;
-                    "
-                >
-                    Search
-                </button>
             </div>
-
-            <!-- Feature images -->
-            <div class="feature-images">
-                <img src="assets/images/Feature/1.svg" style="margin-right: 24px;">
-                <img src="assets/images/Feature/2.svg" style="margin-right: 24px;">
-                <img src="assets/images/Feature/3.svg" style="margin-right: 24px;">
-                <img src="assets/images/Feature/4.svg">
-            </div>
-
-            <!-- Branch logos -->
-            <div class="branch-logos">
-                <!-- Amazon logo -->
-                <img
-                    id="amazon-logo"
-                    src="assets/images/Branch/amazon-color.svg"
-                    width="188px"
-                    height="57px"
-                    style="
-                        filter: brightness(75%) saturate(0);
-                        opacity: 0.5;
-                    "
-                >
-
-                <!-- Google logo -->
-                <img 
-                    id="google-logo"
-                    src="assets/images/Branch/google-color.svg"
-                    width="147.06px"
-                    height="48px"
-                    style="
-                        filter: brightness(75%) saturate(0);
-                        opacity: 0.5;
-                    "
-                >
-
-                <!-- Cocacola logo -->
-                <img 
-                    id="cocacola-logo"
-                    src="assets/images/Branch/cocacola-color.svg"
-                    width="185px"
-                    height="60px"
-                    style="
-                        filter: brightness(75%) saturate(0);
-                        opacity: 0.5;
-                    "
-                >
-
-                <!-- Airbnb logo -->
-                <img 
-                    id="airbnb-logo" 
-                    src="assets/images/Branch/airbnb-color.svg"
-                    width="153.85px"
-                    height="48px"
-                    style="
-                        filter: brightness(75%) saturate(0);
-                        opacity: 0.5;
-                    "
-                >
-
-                <!-- Samsung logo -->
-                <img 
-                    id="samsung-logo" 
-                    src="assets/images/Branch/samsung-color.svg"
-                    width="221px"
-                    height="34px"
-                    style="
-                        filter: brightness(75%) saturate(0);
-                        opacity: 0.5;
-                    "
-                >
-
-                <!-- Javascript to colorize branch logos -->
-                <script>
-                    // Amazon logo
-                    const amazonLogo = document.getElementById("amazon-logo");
-                    amazonLogo.addEventListener('mouseover', function() {
-                        this.style.filter = '';
-                        this.style.opacity = '';
-                    });
-
-                    amazonLogo.addEventListener('mouseout', function() {
-                        this.style.filter = 'brightness(75%) saturate(0)';
-                        this.style.opacity = '0.5';
-                    });
-
-                    // Google logo
-                    const googleLogo = document.getElementById("google-logo");
-                    googleLogo.addEventListener("mouseover", function () {
-                        this.style.filter = '';
-                        this.style.opacity = '';
-                    });
-                    googleLogo.addEventListener("mouseout", function () {
-                        this.style.filter = 'brightness(75%) saturate(0)';
-                        this.style.opacity = '0.5';
-                    });
-
-                    // Cocacola logo
-                    const cocacolaLogo = document.getElementById("cocacola-logo");
-                    cocacolaLogo.addEventListener("mouseover", function () {
-                        this.style.filter = '';
-                        this.style.opacity = '';
-                    });
-                    cocacolaLogo.addEventListener("mouseout", function () {
-                        this.style.filter = 'brightness(75%) saturate(0)';
-                        this.style.opacity = '0.5';
-                    });
-
-                    // Airbnb logo
-                    const airbnbLogo = document.getElementById("airbnb-logo");
-                    airbnbLogo.addEventListener("mouseover", function () {
-                        this.style.filter = '';
-                        this.style.opacity = '';
-                    });
-                    airbnbLogo.addEventListener("mouseout", function () {
-                        this.style.filter = 'brightness(75%) saturate(0)';
-                        this.style.opacity = '0.5';
-                    });
-
-                    // Samsung logo
-                    const samsungLogo = document.getElementById("samsung-logo");
-                    samsungLogo.addEventListener("mouseover", function () {
-                        this.style.filter = '';
-                        this.style.opacity = '';
-                    });
-                    samsungLogo.addEventListener("mouseout", function () {
-                        this.style.filter = 'brightness(75%) saturate(0)';
-                        this.style.opacity = '0.5';
-                    });
-                </script>
-            </div>
-
             
+            <!-- Product page -->
+            <div class="product-page">
+                <!-- Product title -->
+                <div class="product-title">
+                    <div>
+                        Check Our Product
+                    </div>
+                    <div>
+                        Crafted with excellent material
+                    </div>
+                    <div>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <!-- Product content -->
+                <div class="product-content">
+                    <!-- Product item: LIFESTYLE GREEN CHAIR --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/LifestyleGreenChair.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Lifestyle Green Chair
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $105.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: MODERN CUPBOARD --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/ModernCupboard.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Modern Cupboard
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $185.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: FABRIC CHAIR --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/FabricChair.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Fabric Chair
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $95.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: WHITE ARMCHAIR --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/WhiteArmchair.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                White Armchair
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $125.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: BROWN SOFA --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/BrownSofa.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Brown Sofa
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $365.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: WOODEN CHAIR --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/WoodenChair.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Wooden Chair
+                            </div>
+                            <div>
+                                <div>
+                                    $155.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: MODERN LAMP --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/ModernLamp.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Modern Lamp
+                            </div>
+                            <div>
+                                <div>
+                                    $65.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product item: COMFY SPRINGBED --> 
+                    <div class="product-item">
+                        <!-- Discount -->
+                        <div>
+                            -35%
+                        </div>
+
+                        <!-- Image -->
+                        <div class="product-item-image">
+                            <img src="assets/images/Product/ComfySpringbed.svg">
+                            <div>
+                                <img src="assets/images/Bag-Orange.svg" style="margin-right: 8px;">
+                                <div>
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name and price -->
+                        <div class="product-item-name">
+                            <div>
+                                Comfy Springbed
+                            </div>
+                            <div>
+                                <div>
+                                    <del>$105.00</del>                    
+                                </div>
+                                <div>
+                                    $1525.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer reviews -->
+            <div class="customer-reviews">
+                <!-- Customer reviews title -->
+                <div class="product-title">
+                    <div style="background-color: #ECECEC;">
+                        Testimonial Section
+                    </div>
+                    <div>
+                        What Our Customer Say
+                    </div>
+                    <div>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <!-- Customer reviews content -->
+                <div>
+                    <!-- Review 1 -->
+                    <div class="customer-reviews-item">
+                        <img src="assets/images/QuoteIcon.svg">
+                        <div>
+                            I've always been hesitant about buying furniture online, but this website exceeded my expectations. The selection is incredible, offering a wide range of styles to suit any taste. The detailed product descriptions and high-resolution images provided a clear picture of what to expect. I took the plunge and ordered a sofa, and I'm thrilled with the result. The quality is superb, and it's even more beautiful in person. I'm grateful for the excellent customer service throughout the process. This website has won my trust, and I'll be recommending it to all my friends!
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <img src="assets/images/User/JohnyAssloy-Avatar.svg" style="margin-right: 14px;">
+                                <div style="font-size: 18px; line-height: 24px;">
+                                    Johny Assloy
+                                </div>
+                            </div>
+                            <img src="assets/images/User/Rate.svg">
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="customer-reviews-item">
+                        <img src="assets/images/QuoteIcon.svg">
+                        <div class="content-font" >
+                            I recently purchased furniture from this website, and I couldn't be happier with my experience. The quality of the furniture is outstanding, and it arrived exactly as described. The customer service was top-notch, with prompt and helpful responses to all my inquiries. I highly recommend this website for anyone looking to buy furniture for their home.
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <img src="assets/images/User/JohnyAssloy-Avatar.svg" style="margin-right: 14px;">
+                                <div class="title-font" style="font-size: 18px; line-height: 24px;">
+                                    Johny Assloy
+                                </div>
+                            </div>
+                            <img src="assets/images/User/Rate.svg">
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="customer-reviews-item">
+                        <img src="assets/images/QuoteIcon.svg">
+                        <div class="content-font" >
+                            Shopping for furniture has never been easier! I stumbled upon this website and decided to give it a try. From browsing the extensive catalog to placing my order, the process was smooth and seamless. The website's intuitive interface made it simple to find the perfect pieces for my home. The furniture arrived on time, well-packaged, and in excellent condition. I'm thrilled with my purchase and will definitely be a returning customer.
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <img src="assets/images/User/SarahH.svg" style="margin-right: 14px;">
+                                <div class="title-font" style="font-size: 18px; line-height: 24px;">
+                                    Johny Assloy
+                                </div>
+                            </div>
+                            <img src="assets/images/User/Rate.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Furniture gallery -->
+            <div class="furniture-gallery">
+                <!-- Shop now menu -->
+                <div class="shop-now-menu">
+                    <!-- Wooden chair -->
+                    <div class="shop-now-menu-item">
+                        <div>
+                            <div>
+                                Wooden Chair
+                            </div>
+                            <button>
+                                Shop now
+                            </button>
+                        </div>
+                        <img src="assets/images/ShopNow/WoodenChair.svg">
+                    </div>
+
+                    <!-- Bookcase -->
+                    <div class="shop-now-menu-item">
+                        <div>
+                            <div>
+                                Bookcase
+                            </div>
+                            <button>
+                                Shop now
+                            </button>
+                        </div>
+                        <img src="assets/images/ShopNow/Bookcase.svg">
+                    </div>
+
+                    <!-- Single Sofa -->
+                    <div class="shop-now-menu-item">
+                        <div>
+                            <div>
+                                Single Sofa
+                            </div>
+                            <button>
+                                Shop now
+                            </button>
+                        </div>
+                        <img src="assets/images/ShopNow/SingleSofa.svg">
+                    </div>
+                </div>
+
+                <!-- Furniture gallery content -->
+                <div class="furniture-gallery-content">
+                    <!-- Furniture gallery title -->
+                    <div class="product-title">
+                        <div>
+                            Check Our Collection
+                        </div>
+                        <div>
+                            Our Furniture Gallery
+                        </div>
+                        <div>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+
+                    <!-- Furniture gallery button -->
+                    <div class="furniture-gallery-button">
+                        <!-- All -->
+                        <button>
+                            <img src="assets/images/FurnitureGalleryButton/All.svg" style="margin-right: 14px;">
+                            <div>
+                                All
+                            </div>
+                        </button>
+
+                        <!-- Best sellers -->
+                        <button>
+                            <img src="assets/images/FurnitureGalleryButton/BestSellers.svg" style="margin-right: 14px;">
+                            <div>
+                                Best Sellers
+                            </div>
+                        </button>
+
+                        <!-- New -->
+                        <button>
+                            <img src="assets/images/FurnitureGalleryButton/New.svg" style="margin-right: 14px;">
+                            <div>
+                                New
+                            </div>
+                        </button>
+
+                        <!-- Up coming -->
+                        <button>
+                            <img src="assets/images/FurnitureGalleryButton/UpComing.svg" style="margin-right: 14px;">
+                            <div>
+                                Up Coming
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Furniture gallery image -->
+                    <div>
+                        <img src="assets/images/FurnitureGalleryImage/1.svg">
+                        <img src="assets/images/FurnitureGalleryImage/2.svg">
+                        <img src="assets/images/FurnitureGalleryImage/3.svg">
+                        <img src="assets/images/FurnitureGalleryImage/4.svg">
+                        <img src="assets/images/FurnitureGalleryImage/5.svg">
+                        <img src="assets/images/FurnitureGalleryImage/6.svg">
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
         </div>
 
         <!-- Foooter -->
-        <footer style="background-color: #5c59d4">
+        <footer style="background-color: #5c59d4; width: 100%;">
             <div
                 style="
                     padding: 129px 153px 60px 154px;
@@ -262,7 +612,7 @@
                         style="
                             width: 667px;
                             height: 82px;
-                            background-color: #f5f5f5;
+                            background-color: var(--custom-graywhite-color);
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -277,7 +627,7 @@
                                 height: 30px;
                                 width: 60%;
                                 border: 0px;
-                                background-color: #f5f5f5;
+                                background-color: var(--custom-graywhite-color);
                                 font-size: 20px;
                             "
                         />
@@ -306,7 +656,7 @@
                     style="
                         margin-bottom: 24px;
                         padding-bottom: 78px;
-                        border-bottom: 1px solid #f5f5f5;
+                        border-bottom: 1px solid var(--custom-graywhite-color);
                         display: flex;
                     "
                 >
@@ -316,7 +666,7 @@
                             class="content-font"
                             style="
                                 font-size: 18px;
-                                color: #f5f5f5;
+                                color: var(--custom-graywhite-color);
                                 line-height: 26px;
                                 letter-spacing: -0.3px;
                             "
@@ -338,7 +688,7 @@
                                 style="
                                     font-size: 18px;
                                     font-weight: bold;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     margin-bottom: 16px;
                                 "
                             >
@@ -351,7 +701,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     font-size: 16px;
                                     align-content: space-between;
                                 "
@@ -368,7 +718,7 @@
                                 style="
                                     font-size: 18px;
                                     font-weight: bold;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     margin-bottom: 16px;
                                 "
                             >
@@ -381,7 +731,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     font-size: 16px;
                                     align-content: space-between;
                                 "
@@ -398,7 +748,7 @@
                                 style="
                                     font-size: 18px;
                                     font-weight: bold;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     margin-bottom: 16px;
                                 "
                             >
@@ -411,7 +761,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     font-size: 16px;
                                     align-content: space-between;
                                 "
@@ -428,7 +778,7 @@
                                 style="
                                     font-size: 18px;
                                     font-weight: bold;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     margin-bottom: 16px;
                                 "
                             >
@@ -441,7 +791,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    color: #f5f5f5;
+                                    color: var(--custom-graywhite-color);
                                     font-size: 16px;
                                     align-content: space-between;
                                 "
@@ -458,7 +808,7 @@
                     class="content-font"
                     style="
                         font-size: 14px;
-                        color: #f5f5f5;
+                        color: var(--custom-graywhite-color);
                         text-align: left;
                         line-height: 22px;
                     "
@@ -467,5 +817,6 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
