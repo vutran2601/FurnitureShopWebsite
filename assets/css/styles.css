@@ -289,6 +289,7 @@ html, body {
     align-items: center;
     padding-top: 66px;
     padding-bottom: 66px;
+    width: 100%;
 }
 
 .customer-reviews > div:first-child {
@@ -297,24 +298,17 @@ html, body {
 }
 
 .customer-reviews > div:nth-child(2) {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.customer-reviews > div:nth-child(2) > form {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-}
-
-
 .customer-reviews-item {
     background-color: white;
     width: 623px;
     padding: 42px;
-    height: fit-content;
+    height: max-content;
+    box-sizing: border-box;
 }
 
 .customer-reviews-item > div:nth-child(2) {
@@ -358,7 +352,6 @@ html, body {
 
 .shop-now-menu-item {
     width: 400px;
-    height: 180px;
     display: flex;
     justify-content: space-between;
 }
@@ -444,5 +437,87 @@ html, body {
     gap: 24px;
 }
 
+.bottom-review {
+    background-color: var(--custom-graywhite-color);
+    width: 100%;
+    display: flex;
+}
+
+.bottom-customer-review {
+    margin-top: 64px;
+    margin-bottom: 200px;
+    margin-left: 96px;
+    margin-right: 117px;
+    width: 735px;
+    height: 241px;
+    position: relative;
+}
 
 
+.bottom-customer-review-content {
+    width: 539px;
+}
+
+.bottom-customer-review-content > div:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.bottom-customer-review-content > div:nth-child(2) {
+    font-family: var(--content-font);
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--custom-grayblack-color);
+    margin-bottom: 20px;
+}
+
+.bottom-review-customer-name > div:first-child {
+    font-family: var(--title-font);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.bottom-review-customer-name > div:nth-child(2){
+    font-family: var(--content-font);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.bottom-customer-review-image > img:first-child {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 208px;
+    height: 147px;
+}
+
+.bottom-customer-review-image > img:nth-child(2) {
+    position: absolute;
+    right: -6px;
+    top: 149px;
+}
+
+.our-furniture-review {
+    margin-top: 138px;
+    width: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+}
+
+.our-furniture-review > div:first-child {
+    background-color: #ececec;
+    color: #5C59D4;
+    margin-bottom: 15px;
+}
+
+.our-furniture-review > div:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.our-furniture-review > div:nth-child(3) {
+    text-align: left;
+    width: 100%;
+}
