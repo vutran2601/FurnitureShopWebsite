@@ -23,6 +23,7 @@
                 <img src="assets/images/Bag.svg"/>
                 <img src="assets/images/User.svg"/>
             </div>
+            <img class="hidden" src="assets/images/MenuIcon.svg">
         </header>
 
         <!-- Content -->
@@ -43,7 +44,7 @@
                 <!-- Feature search -->
                 <div class="feature-search">
                     <div>
-                        <img src="assets/images/Search.svg" style="margin-right: 14px;"/>
+                        <img src="assets/images/Search.svg"/>
                         <input type="text" placeholder="Search your property..."/>
                     </div>
                     <button type="button">
@@ -62,64 +63,74 @@
                 <!-- Branch logos -->
                 <div class="branch-logos">
                     <!-- Amazon logo -->
-                    <img
-                        id="amazon-logo"
-                        src="assets/images/Branch/amazon-color.svg"
-                        width="188px"
-                        height="57px"
-                        style="
-                            filter: brightness(75%) saturate(0);
-                            opacity: 0.5;
-                        "
-                    >
+                    <a href="https://www.amazon.com" target="_blank">
+                        <img
+                            id="amazon-logo"
+                            src="assets/images/Branch/amazon-color.svg"
+                            width="188px"
+                            height="57px"
+                            style="
+                                filter: brightness(75%) saturate(0);
+                                opacity: 0.5;
+                            "
+                        >
+                    </a>
 
                     <!-- Google logo -->
-                    <img
-                        id="google-logo"
-                        src="assets/images/Branch/google-color.svg"
-                        width="147.06px"
-                        height="48px"
-                        style="
-                            filter: brightness(75%) saturate(0);
-                            opacity: 0.5;
-                        "
-                    >
+                    <a href="https://www.google.com" target="_blank">
+                        <img
+                            id="google-logo"
+                            src="assets/images/Branch/google-color.svg"
+                            width="147.06px"
+                            height="48px"
+                            style="
+                                filter: brightness(75%) saturate(0);
+                                opacity: 0.5;
+                            "
+                        >
+                    </a>
 
                     <!-- Cocacola logo -->
-                    <img
-                        id="cocacola-logo"
-                        src="assets/images/Branch/cocacola-color.svg"
-                        width="185px"
-                        height="60px"
-                        style="
-                            filter: brightness(75%) saturate(0);
-                            opacity: 0.5;
-                        "
-                    >
+                    <a href="https://www.coca-colacompany.com/" target="_blank">
+                        <img
+                            id="cocacola-logo"
+                            src="assets/images/Branch/cocacola-color.svg"
+                            width="185px"
+                            height="60px"
+                            style="
+                                filter: brightness(75%) saturate(0);
+                                opacity: 0.5;
+                            "
+                        >
+                    </a>
 
                     <!-- Airbnb logo -->
-                    <img
-                        id="airbnb-logo"
-                        src="assets/images/Branch/airbnb-color.svg"
-                        width="153.85px"
-                        height="48px"
-                        style="
-                            filter: brightness(75%) saturate(0);
-                            opacity: 0.5;
-                        "
-                    >
+                    <a href="https://www.airbnb.com/" target="_blank">
+                        <img
+                            id="airbnb-logo"
+                            src="assets/images/Branch/airbnb-color.svg"
+                            width="153.85px"
+                            height="48px"
+                            style="
+                                filter: brightness(75%) saturate(0);
+                                opacity: 0.5;
+                            "
+                        >
+                    </a>
 
                     <!-- Samsung logo -->
-                    <img
-                        id="samsung-logo"
-                        src="assets/images/Branch/samsung-color.svg"
-                        width="221px"
-                        height="34px"
-                        style="
-                            filter: brightness(75%) saturate(0);
-                            opacity: 0.5;
-                        "
-                    >
+                    <a href="https://www.samsung.com/" target="_blank">
+                        <img
+                            id="samsung-logo"
+                            src="assets/images/Branch/samsung-color.svg"
+                            width="221px"
+                            height="34px"
+                            style="
+                                filter: brightness(75%) saturate(0);
+                                opacity: 0.5;
+                            "
+                        >
+                    </a>
                 </div>
             </div>
             
@@ -409,7 +420,7 @@
             </div>
 
             <!-- Customer reviews -->
-            <div class="customer-reviews">
+            <div id="customer-reviews" class="customer-reviews">
                 <!-- Customer reviews title -->
                 <div class="product-title">
                     <div style="background-color: #ECECEC;">
@@ -427,14 +438,17 @@
                 <div>
                     <!-- Review 1 -->
                     <div class="customer-reviews-item">
-                        <img src="assets/images/QuoteIcon.svg">
+                        <div>
+                            <img src="assets/images/QuoteIcon.svg">
+                            <img src="assets/images/QuoteIconOrage.svg">
+                        </div>
                         <div>
                             I've always been hesitant about buying furniture online, but this website exceeded my expectations. The selection is incredible, offering a wide range of styles to suit any taste. The detailed product descriptions and high-resolution images provided a clear picture of what to expect. I took the plunge and ordered a sofa, and I'm thrilled with the result. The quality is superb, and it's even more beautiful in person. I'm grateful for the excellent customer service throughout the process. This website has won my trust, and I'll be recommending it to all my friends!
                         </div>
-                        <div>
-                            <div style="display: flex; align-items: center;">
-                                <img src="assets/images/User/JohnyAssloy-Avatar.svg" style="margin-right: 14px;">
-                                <div style="font-size: 18px; line-height: 24px;">
+                        <div class="customer-info">
+                            <div>
+                                <img src="assets/images/User/JohnyAssloy-Avatar.svg">
+                                <div>
                                     Johny Assloy
                                 </div>
                             </div>
@@ -444,14 +458,17 @@
 
                     <!-- Review 2 -->
                     <div class="customer-reviews-item">
-                        <img src="assets/images/QuoteIcon.svg">
-                        <div class="content-font" >
-                            I recently purchased furniture from this website, and I couldn't be happier with my experience. The quality of the furniture is outstanding, and it arrived exactly as described. The customer service was top-notch, with prompt and helpful responses to all my inquiries. I highly recommend this website for anyone looking to buy furniture for their home.
+                        <div>
+                            <img src="assets/images/QuoteIcon.svg">
+                            <img src="assets/images/QuoteIconOrage.svg">
                         </div>
                         <div>
-                            <div style="display: flex; align-items: center;">
-                                <img src="assets/images/User/JohnyAssloy-Avatar.svg" style="margin-right: 14px;">
-                                <div class="title-font" style="font-size: 18px; line-height: 24px;">
+                            I recently purchased furniture from this website, and I couldn't be happier with my experience. The quality of the furniture is outstanding, and it arrived exactly as described. The customer service was top-notch, with prompt and helpful responses to all my inquiries. I highly recommend this website for anyone looking to buy furniture for their home.
+                        </div>
+                        <div class="customer-info">
+                            <div>
+                                <img src="assets/images/User/JohnyAssloy-Avatar.svg">
+                                <div>
                                     Johny Assloy
                                 </div>
                             </div>
@@ -461,19 +478,28 @@
 
                     <!-- Review 3 -->
                     <div class="customer-reviews-item">
-                        <img src="assets/images/QuoteIcon.svg">
-                        <div class="content-font" >
-                            Shopping for furniture has never been easier! I stumbled upon this website and decided to give it a try. From browsing the extensive catalog to placing my order, the process was smooth and seamless. The website's intuitive interface made it simple to find the perfect pieces for my home. The furniture arrived on time, well-packaged, and in excellent condition. I'm thrilled with my purchase and will definitely be a returning customer.
+                        <div>
+                            <img src="assets/images/QuoteIcon.svg">
+                            <img src="assets/images/QuoteIconOrage.svg">
                         </div>
                         <div>
-                            <div style="display: flex; align-items: center;">
-                                <img src="assets/images/User/SarahH.svg" style="margin-right: 14px;">
-                                <div class="title-font" style="font-size: 18px; line-height: 24px;">
+                            Shopping for furniture has never been easier! I stumbled upon this website and decided to give it a try. From browsing the extensive catalog to placing my order, the process was smooth and seamless. The website's intuitive interface made it simple to find the perfect pieces for my home. The furniture arrived on time, well-packaged, and in excellent condition. I'm thrilled with my purchase and will definitely be a returning customer.
+                        </div>
+                        <div class="customer-info">
+                            <div>
+                                <img src="assets/images/User/SarahH.svg">
+                                <div>
                                     Johny Assloy
                                 </div>
                             </div>
                             <img src="assets/images/User/Rate.svg">
                         </div>
+                    </div>
+
+                    <div>
+                        <button id="review1"></button>
+                        <button id="review2" class="selected"></button>
+                        <button id="review3"></button>
                     </div>
                 </div>
             </div>
@@ -540,7 +566,7 @@
                     <!-- Furniture gallery button -->
                     <div class="furniture-gallery-button">
                         <!-- All -->
-                        <button>
+                        <button class="selected">
                             <img src="assets/images/FurnitureGalleryButton/All.svg" style="margin-right: 14px;">
                             <div>
                                 All
@@ -612,6 +638,16 @@
                     <div class="bottom-customer-review-image">
                         <img src="assets/images/QuoteIcon.svg">
                         <img src="assets/images/User/Sofa.svg">
+                    </div>
+
+                    <!-- Arrow button -->
+                    <div class="arrow-button">
+                        <div>
+                            <img src="assets/images/ArrowLeft.svg">
+                        </div>
+                        <div>
+                            <img src="assets/images/ArrowRight.svg">
+                        </div>
                     </div>
                 </div>
 
