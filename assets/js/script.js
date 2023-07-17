@@ -50,40 +50,6 @@ samsungLogo.addEventListener("mouseout", function () {
 });
 // END
 
-/// Handle switch for customer review
-const customerReviewSliderButtons = document.querySelectorAll(
-    ".customer-reviews > div:nth-child(2) > div:last-child> button"
-);
-for (let button of customerReviewSliderButtons) {
-    button.addEventListener("click", function () {
-        // Deselect all other buttons
-        customerReviewSliderButtons.forEach(function (otherButton) {
-            if (otherButton !== this) {
-                otherButton.classList.remove("selected");
-            }
-        });
-
-        // Select this button
-        this.classList.add("selected");
-    });
-}
-const customerReviewSlider = document.querySelector(
-    ".customer-reviews > div:nth-child(2)"
-);
-const review1_Button = document.getElementById("review1");
-review1_Button.addEventListener("click", function () {
-    customerReviewSlider.style.marginLeft = "67%";
-});
-const review2_Button = document.getElementById("review2");
-review2_Button.addEventListener("click", function () {
-    customerReviewSlider.style.marginLeft = "0vw";
-});
-const review3_Button = document.getElementById("review3");
-review3_Button.addEventListener("click", function () {
-    customerReviewSlider.style.marginLeft = "-67%";
-});
-// END
-
 // Handle click furniture gallery button
 const furnitureGalleryButtons = document.querySelectorAll(
     ".furniture-gallery-button > button"

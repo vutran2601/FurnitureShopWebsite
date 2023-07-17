@@ -24,6 +24,12 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+
+    @media only screen and (max-width: 420px) {
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
 }
 
 .header {
@@ -34,13 +40,13 @@ html, body {
     border-bottom: 1px solid #dbdbdb;
     font-family: var(--title-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         padding: 5%;
     }
 }
 
 header > img:first-child {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         scale: 0.7;
     }
 }
@@ -52,7 +58,7 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         display: none;
     }
 }
@@ -62,14 +68,14 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         display: none;
     }
 }
 
 .header > img:last-child {
     display: none;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         display: block;
     }
 }
@@ -81,7 +87,7 @@ header > img:first-child {
     align-items: center;
     width: 100%;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-top: 43px;
     }
 }
@@ -93,7 +99,7 @@ header > img:first-child {
     width: 100%;
     margin-bottom: 112px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
        margin-bottom: 42px;
     }
 }
@@ -106,7 +112,7 @@ header > img:first-child {
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         max-width: 293px;
         width: 73.25%;
     }
@@ -121,7 +127,7 @@ header > img:first-child {
     font-weight: 700;
     font-family: var(--title-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 24px;
         line-height: 120%;
         font-weight: 800;
@@ -139,7 +145,7 @@ header > img:first-child {
     text-align: center;
     font-family: var(--content-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 14px;
         line-height: 150%;
         margin-bottom: 50px;
@@ -161,7 +167,7 @@ header > img:first-child {
     margin-bottom: 76px;
     box-sizing: border-box;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         max-width: 281px;
         max-height: 45px;
         height: fit-content;
@@ -180,7 +186,7 @@ header > img:first-child {
     justify-content: center;
     width: 60%;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         max-width: 281px;
         width: fit-content;
     }
@@ -189,7 +195,7 @@ header > img:first-child {
 .feature-search > div:first-child > img {
     margin-right: 14px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-right: 7.68px;
     }
 }
@@ -202,7 +208,7 @@ header > img:first-child {
     font-size: 20px;
     font-family: var(--content-font);
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         height: 17px;
         font-size: 11px;
     }
@@ -219,7 +225,7 @@ header > img:first-child {
     color: white;
     font-family: var(--title-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 72.73px;
         height: 30.07px;
         padding: 6.59px 15.37px;
@@ -232,28 +238,43 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-bottom: 43px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        overflow-x: auto;
     }
 }
 
+.feature-images > img:not(:last-child) {
+    margin-right: 12.8px;
+}
+
 .feature-images > img:first-child {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 125.87px;
         height: 160px;
     }
 }
 
 .feature-images > img:nth-child(2) {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 252.27px;
         height: 160px;
     }
 }
 
-.feature-images > img:nth-child(3), .feature-images > img:last-child{
-    @media only screen and (max-width: 400px) {
-        display: none;
+.feature-images > img:nth-child(3) {
+    @media only screen and (max-width: 420px) {
+        width: 125.87px;
+        height: 160px;
+    }
+}
+
+.feature-images > img:last-child {
+    @media only screen and (max-width: 420px) {
+        width: 252.27px;
+        height: 160px;
     }
 }
 
@@ -263,7 +284,7 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 338px;
     }
 }
@@ -277,13 +298,13 @@ header > img:first-child {
         transform: scale(1.3);
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         transform: scale(1);
     }
 }
 
 .branch-logos img {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 50px;
         height: 12px;
         filter: brightness(75%) saturate(0);
@@ -298,7 +319,7 @@ header > img:first-child {
     justify-content: center;
     align-items: center;
     margin-bottom: 112px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 340.39px;
         margin-bottom: 42px;
     }
@@ -312,7 +333,7 @@ header > img:first-child {
     align-items: center;
     margin-bottom: 80px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 281px;
         margin-bottom: 32px;
     }  
@@ -328,7 +349,7 @@ header > img:first-child {
     font-family: var(--title-font);
     margin-bottom: 15px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 10px;
         line-height: 13.6px;
         padding: 2.1px 12.58px;
@@ -345,7 +366,7 @@ header > img:first-child {
     text-align: center;
     font-family: var(--title-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 20px;
         line-height: 29.3px;
         margin-bottom: 7.86px;
@@ -360,7 +381,7 @@ header > img:first-child {
     text-align: center;
     font-family: var(--content-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 10px;
         line-height: 13.6px;
         width: 236.34px;
@@ -374,10 +395,12 @@ header > img:first-child {
     row-gap: 48px;
     font-family: var(--title-font);
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         grid-gap: 12px;
         row-gap: 11px;
         height: 556.09px;
+        width: 100%;
+        overflow-x: auto;
     }
 }
 
@@ -395,7 +418,7 @@ header > img:first-child {
     font-size: 16px;
     line-height: 24px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         top: 11.7px;
         left: 10.68px;
         font-size: 8.94px;
@@ -414,7 +437,7 @@ header > img:first-child {
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         padding-top: 6.14px;
         padding-left: 6.14px;
         padding-right: 6.7px;
@@ -423,7 +446,7 @@ header > img:first-child {
 
 .product-item-image > img {
     margin: 0px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 151.35px;
         height: 167.55px;
         margin: 0px;
@@ -437,7 +460,7 @@ header > img:first-child {
     margin-top: 23px;
     margin-bottom: 20px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-top: 12.85px;
         margin-bottom: 10.57px;
     }
@@ -453,7 +476,7 @@ header > img:first-child {
     line-height: 24px;
     color: var(--custom-orange-color);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 8.94px;
         line-height: 13.4px;
     }
@@ -463,7 +486,7 @@ header > img:first-child {
     margin-top: 24px;
     margin-bottom: 24px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-top: 12.4px;
         margin-bottom: 12.92px;
     }
@@ -475,7 +498,7 @@ header > img:first-child {
     color: var(--custom-grayblack-color);
     margin-bottom: 9px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 11.7px;
         line-height: 15.6px;
         margin-bottom: 5.11px;
@@ -494,7 +517,7 @@ header > img:first-child {
     font-size: 16px;
     line-height: 24px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-right: 7.82px;
         font-size: 8.94px;
         line-height: 13.4px;
@@ -506,7 +529,7 @@ header > img:first-child {
     font-size: 18px;
     line-height: 26px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 10.05px;
         line-height: 14.5px;
     }
@@ -518,13 +541,13 @@ header > img:first-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding: 66px;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 
-    @media only screen and (max-width: 400px) {
-        padding-top: 22.96px;
-        padding-bottom: 22.96px;
+    @media only screen and (max-width: 420px) {
+        padding: 22.96px;
     }
 }
 
@@ -532,53 +555,23 @@ header > img:first-child {
     width: 495px;
     margin-bottom: 80px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 236.34px;
         margin-bottom: 27.82px;
     }
 }
 
 .customer-reviews > div:nth-child(2) {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: center;
     gap: 24px;
     transition: 1.3s ease-in-out;
-
-    @media only screen and (max-width: 400px) {
+    width: 100%;
+    overflow-x: auto;
+    @media only screen and (max-width: 420px) {
         gap: 8.35px;
     }
-}
-
-.customer-reviews > div:nth-child(2) > div:last-child {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-    left: 48%;
-    bottom: 3%;
-
-    @media only screen and (max-width: 400px) {
-        width: 50px;
-    }
-}
-
-.customer-reviews > div:nth-child(2) > div:last-child> button {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #c6c6c6;
-    padding: 0px;
-    border: 0px;
-
-    @media only screen and (max-width: 400px) {
-        width: 7px;
-    height: 7px;
-    border-radius: 7px;
-    }
-}
-
-.customer-reviews > div:nth-child(2) > div:last-child > button.selected {
-    background-color: #5c59d4;
 }
 
 .customer-reviews-item {
@@ -588,14 +581,14 @@ header > img:first-child {
     height: max-content;
     box-sizing: border-box;
 
-    @media only screen and (max-width: 400px) {
-        width: 216.69px;
+    @media only screen and (max-width: 420px) {
+        width: 216.69px !important;
         padding: 14.61px;
     }
 }
 
 .customer-reviews-item > div:first-child > img:first-child {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         display: none;
     }
 }
@@ -603,7 +596,7 @@ header > img:first-child {
 .customer-reviews-item > div:first-child > img:nth-child(2) {
     display: none;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         display: block;
     }
 }
@@ -616,7 +609,7 @@ header > img:first-child {
     margin-bottom: 28px;
     font-family: var(--content-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 7.5px;
         line-height: 11px;
         margin-top: 9.74px;
@@ -632,14 +625,14 @@ header > img:first-child {
 }
 
 .customer-info > div > img {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 15.3px;
         height: 15.3px;
     }
 }
 
 .customer-info > img {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 45.56px;
         height: 8px;
     }
@@ -653,7 +646,7 @@ header > img:first-child {
 .customer-info > div > img {
     margin-right: 14px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-right: 4.87px;
     }
 }
@@ -663,7 +656,7 @@ header > img:first-child {
     font-size: 18px;
     line-height: 24px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         font-size: 6.26px;
         line-height: 10px;
     }
@@ -675,7 +668,7 @@ header > img:first-child {
     box-sizing: border-box;
     font-family: var(--title-font);
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         padding: 42px 25.65px;
     }
 }
@@ -684,7 +677,7 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         flex-direction: column;
         align-items: center;
     }
@@ -703,17 +696,18 @@ header > img:first-child {
 }
 
 .shop-now-menu-item {
-    width: 400px;
+    width: 420px;
     display: flex;
-    justify-content: space-between;
+    position: relative;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         width: 340.71px;
+        height: 153.32px;
     }
 }
 
 .shop-now-menu-item:not(:last-child) {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-bottom: 20px;
     }
 }
@@ -722,6 +716,12 @@ header > img:first-child {
     margin-top: 51px;
     margin-bottom: 43px;
     margin-left: 40px;
+
+    @media only screen and (max-width: 420px) {
+        margin-top: 42.44px;
+        margin-bottom: 36.48px;
+        margin-left: 34.07px;
+    }
 }
 
 .shop-now-menu-item > div:first-child > div {
@@ -730,7 +730,7 @@ header > img:first-child {
     line-height: 32px;
     font-weight: bolder;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         margin-bottom: 11.18px;
         font-size: 20.44px;
         line-height: 27.3px;
@@ -745,11 +745,23 @@ header > img:first-child {
     line-height: 28px;
     width: fit-content;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         padding: 5.11px 15.33px;
         font-size: 17.4px;
         line-height: 23.8px;
     }
+}
+
+.shop-now-menu-item > img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    @media only screen and (max-width: 420px) {
+        scale: 0.8;
+        right: -10px;
+        top: -18px;
+    } 
 }
 
 .furniture-gallery-content {
@@ -758,11 +770,20 @@ header > img:first-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 420px) {
+        margin-top: 42px;
+    }
 }
 
 .furniture-gallery-content > div:first-child {
     width: 451px;
     margin-bottom: 40px;
+
+    @media only screen and (max-width: 420px) {
+        width: 236.34px;
+        margin-bottom: 25px;
+    }
 }
 
 .furniture-gallery-button {
@@ -770,6 +791,12 @@ header > img:first-child {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @media only screen and (max-width: 420px) {
+        width: 100%;
+        margin-bottom: 25px;
+        height: fit-content;
+    }
 }
 
 .furniture-gallery-button > button {
@@ -786,11 +813,25 @@ header > img:first-child {
     &:hover {
         border: 1px solid #5c59d4;
     }
+
+    @media only screen and (max-width: 420px) {
+        padding: 5.86px 11.72px;
+        font-size: 9.77px;
+        line-height: 13.7px;
+        border-radius: 15.63px;
+    }
 }
 
 .furniture-gallery-button > button > img {
     filter: brightness(75%) saturate(0%);
     opacity: 1;
+    margin-right: 14px;
+
+    @media only screen and (max-width: 420px) {
+        width: 11.72px;
+        height: 11.72px;
+        margin-right: 6.84px;
+    }
 }
 
 .furniture-gallery-button button.selected {
@@ -804,37 +845,115 @@ header > img:first-child {
     opacity: 1;
 }
 
-.furniture-gallery-content > div:last-child {
+.furniture-gallery-images {
     max-width: 1248px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    @media only screen and (max-width: 420px) {
+        gap: 2%;
+    }
+}
+
+.furniture-gallery-images > img:first-child {
+    @media only screen and (max-width: 420px) {
+        width: 36.9%;
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+}
+
+.furniture-gallery-images > img:nth-child(2) {
+    @media only screen and (max-width: 420px) {
+        display: none;
+    }
+}
+
+.furniture-gallery-images > img:nth-child(3) {
+    @media only screen and (max-width: 420px) {
+        width: 60.4%;
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+}
+
+.furniture-gallery-images > img:nth-child(4) {
+    @media only screen and (max-width: 420px) {
+        width: 60.4%;
+        height: fit-content;
+    }
+}
+
+.furniture-gallery-images > img:nth-child(5) {
+    @media only screen and (max-width: 420px) {
+        display: none;
+    }
+}
+
+.furniture-gallery-images> img:last-child {
+    @media only screen and (max-width: 420px) {
+        width: 36.9%;
+        height: fit-content;
+    }
 }
 
 .bottom-review {
     background-color: var(--custom-graywhite-color);
     width: 100%;
     display: flex;
+
+    @media only screen and (max-width: 420px) {
+        padding: 28px 67px 138.22px 26px;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
 }
 
 .bottom-customer-review {
-    margin-top: 64px;
-    margin-bottom: 200px;
-    margin-left: 96px;
-    margin-right: 117px;
+    margin: 64px 117px 200px 96px;
     width: 735px;
     height: 241px;
     position: relative;
+
+    @media only screen and (max-width: 420px) {
+        margin: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        height: fit-content;
+    }
 }
 
 .bottom-customer-review-content {
     width: 539px;
+
+    @media only screen and (max-width: 420px) {
+        width: 297px;
+        height: fit-content;
+        padding-top: 37px;
+        position: relative;
+    }
 }
 
 .bottom-customer-review-content > div:first-child {
     display: flex;
     align-items: center;
     margin-bottom: 21px;
+
+    @media only screen and (max-width: 420px) {
+        margin-bottom: 11.49px;
+    }
+        
+}
+
+.bottom-customer-review-content > div:first-child > img {
+    margin-right: 14px;
+
+    @media only screen and (max-width: 420px) {
+        margin-right: 8.04px;
+        width: 25.27px;
+        height: 25.27px;
+    }
+        
 }
 
 .bottom-customer-review-content > div:nth-child(2) {
@@ -843,32 +962,79 @@ header > img:first-child {
     line-height: 28px;
     color: var(--custom-grayblack-color);
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 420px) {
+        font-size: 7.5px;
+        line-height: 11px;
+        margin-bottom: 11.49px;
+    }
+}
+
+.bottom-customer-review-content > img {
+    @media only screen and (max-width: 420px) {
+        width: 75.24px;
+        height: 13.21px;
+    }
 }
 
 .bottom-review-customer-name > div:first-child {
     font-family: var(--title-font);
     font-size: 18px;
     line-height: 24px;
+
+    @media only screen and (max-width: 420px) {
+        font-size: 10px;
+        line-height: 13.8px;
+    }
 }
 
 .bottom-review-customer-name > div:nth-child(2) {
     font-family: var(--content-font);
     font-size: 16px;
     line-height: 22px;
+
+    @media only screen and (max-width: 420px) {
+        font-size: 10px;
+        line-height: 12.6px;
+    }
 }
 
-.bottom-customer-review-image > img:first-child {
+.Quote {
     position: absolute;
     right: 0px;
     bottom: 0px;
     width: 208px;
     height: 147px;
+
+    @media only screen and (max-width: 420px) {
+        display: none;
+    }
 }
 
-.bottom-customer-review-image > img:nth-child(2) {
+.QuoteOrange {
+    display: none;
+
+    @media only screen and (max-width: 420px) {
+        display: block;
+        position: absolute;
+        right: 9.33px;
+        top: 6px;
+        width: 63.67px;
+        height: 45px;
+    }
+}
+
+.Sofa {
     position: absolute;
     right: -6px;
     top: 149px;
+
+    @media only screen and (max-width: 420px) {
+        right: -36.68px;
+        top: 129.41px;
+        width: fit-content;
+        height: 242.38px;
+    }
 }
 
 .our-furniture-review {
@@ -878,23 +1044,35 @@ header > img:first-child {
     flex-direction: column;
     align-items: start;
     justify-content: left;
+
+    @media only screen and (max-width: 420px) {
+        margin-top: 0px;
+        width: 199.3px;
+    }
 }
 
 .our-furniture-review > div:first-child {
     background-color: #ececec;
     color: #5c59d4;
     margin-bottom: 15px;
+
+    @media only screen and (max-width: 420px) {
+        margin-bottom: 11.3px;
+    }
 }
 
 .our-furniture-review > div:nth-child(2) {
     margin-bottom: 16px;
+
+    @media only screen and (max-width: 420px) {
+        margin-bottom: 9px;
+    }
 }
 
 .our-furniture-review > div:nth-child(3) {
     text-align: left;
     width: 100%;
 }
-
 
 .arrow-button {
     position: absolute;
@@ -903,6 +1081,12 @@ header > img:first-child {
     width: 88px;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 420px) {
+        width: 50.54px;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 .arrow-button > div {
@@ -914,6 +1098,11 @@ header > img:first-child {
     &:hover {
         border: 1px solid #5c59d4;
     }
+
+    @media only screen and (max-width: 420px) {
+        width: 18.38px;
+        height: 18.38px;
+    }
 }
 
 .arrow-button > div > img {
@@ -923,5 +1112,159 @@ header > img:first-child {
         filter: brightness(100%) saturate(100%);
         opacity: 1;
     }
+
+    @media only screen and (max-width: 420px) {
+        width: 18.38px;
+        height: 18.38px;
+    }
 }
 
+footer {
+    background-color: #5c59d4;
+    width: 100%;
+}
+
+.subscribe {
+    padding: 129px 153px 60px 154px;
+    background-color: #f2a156;
+    display: flex;
+
+    @media only screen and (max-width: 420px) {
+        padding: 79px 25.77px 45px 25.28px;
+        flex-direction: column;
+    }
+}
+
+.subscribe > div:first-child {
+    font-size: 34px;
+    color: white;
+    width: 426px;
+    line-height: 42px;
+    margin-right: 40px;
+    font-family: var(--title-font);
+
+    @media only screen and (max-width: 420px) {
+        font-size: 16.09px;;
+        width: 201.17px;
+        line-height: 19.8px;
+        margin-right: 0px;
+        margin-bottom: 18.08px;
+    }
+}
+
+.subscribe > div:last-child {
+    width: 667px;
+    height: 82px;
+    background-color: var(--custom-graywhite-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 420px) {
+        width: 100%;
+        height: 41.92px;
+    }
+}
+
+.subscribe > div:last-child > input {
+    margin-left: 24px;
+    height: 30px;
+    width: 60%;
+    border: 0px;
+    background-color: var(--custom-graywhite-color);
+    font-size: 20px;
+    font-family: var(--content-font);
+
+    @media only screen and (max-width: 420px) {
+        margin-left: 12.27px;
+        height: 30px;
+        width: 60%;
+        font-size: 10.22px;
+    }
+}
+
+.subscribe > div:last-child > button {
+    width: 163px;
+    height: 54px;
+    padding: 12px 28px;
+    background-color: #5c59d4;
+    margin-right: 14px;
+    font-weight: bold;
+    font-size: 22px;
+    border: 0px;
+    color: white;
+    font-family: var(--title-font);
+
+    @media only screen and (max-width: 420px) {
+        width: 83.63px;
+        height: 28.27px;
+        padding: 6.13px 14.31px;
+        font-size: 11.25px;
+        margin-right: 6.85px;
+    }
+}
+
+.footer-info {
+    padding: 80px 96px
+}
+
+.footer-info > div:first-child {
+    margin-bottom: 24px;
+    padding-bottom: 78px;
+    border-bottom: 1px solid var(--custom-graywhite-color);
+    display: flex;
+}
+
+.logo {
+    width: 219px;
+    margin-right: 157px
+}
+
+.logo > img {
+    margin-bottom: 28px
+}
+
+.logo > div {
+    font-size: 18px;
+    color: var(--custom-graywhite-color);
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    font-family: var(--content-font);
+} 
+
+.footer-list {
+    width: 764px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list > div {
+    height: 100%;
+} 
+
+.footer-list > div > div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--custom-graywhite-color);
+    margin-bottom: 16px;
+    font-family: var(--title-font);
+}
+
+.footer-list > div > div:last-child {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--custom-graywhite-color);
+    font-size: 16px;
+    align-content: space-between;
+    font-family: var(--content-font);
+}
+
+.footer-info > div:last-child {
+    font-size: 14px;
+    color: var(--custom-graywhite-color);
+    text-align: left;
+    line-height: 22px;
+    font-family: var(--content-font);
+}

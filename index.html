@@ -495,12 +495,6 @@
                             <img src="assets/images/User/Rate.svg">
                         </div>
                     </div>
-
-                    <div>
-                        <button id="review1"></button>
-                        <button id="review2" class="selected"></button>
-                        <button id="review3"></button>
-                    </div>
                 </div>
             </div>
 
@@ -567,7 +561,7 @@
                     <div class="furniture-gallery-button">
                         <!-- All -->
                         <button class="selected">
-                            <img src="assets/images/FurnitureGalleryButton/All.svg" style="margin-right: 14px;">
+                            <img src="assets/images/FurnitureGalleryButton/All.svg">
                             <div>
                                 All
                             </div>
@@ -575,7 +569,7 @@
 
                         <!-- Best sellers -->
                         <button>
-                            <img src="assets/images/FurnitureGalleryButton/BestSellers.svg" style="margin-right: 14px;">
+                            <img src="assets/images/FurnitureGalleryButton/BestSellers.svg">
                             <div>
                                 Best Sellers
                             </div>
@@ -583,7 +577,7 @@
 
                         <!-- New -->
                         <button>
-                            <img src="assets/images/FurnitureGalleryButton/New.svg" style="margin-right: 14px;">
+                            <img src="assets/images/FurnitureGalleryButton/New.svg">
                             <div>
                                 New
                             </div>
@@ -591,7 +585,7 @@
 
                         <!-- Up coming -->
                         <button>
-                            <img src="assets/images/FurnitureGalleryButton/UpComing.svg" style="margin-right: 14px;">
+                            <img src="assets/images/FurnitureGalleryButton/UpComing.svg">
                             <div>
                                 Up Coming
                             </div>
@@ -599,7 +593,7 @@
                     </div>
 
                     <!-- Furniture gallery image -->
-                    <div>
+                    <div class="furniture-gallery-images">
                         <img src="assets/images/FurnitureGalleryImage/1.svg">
                         <img src="assets/images/FurnitureGalleryImage/2.svg">
                         <img src="assets/images/FurnitureGalleryImage/3.svg">
@@ -636,8 +630,9 @@
 
                     <!-- Image -->
                     <div class="bottom-customer-review-image">
-                        <img src="assets/images/QuoteIcon.svg">
-                        <img src="assets/images/User/Sofa.svg">
+                        <img class="Quote" id="Quote" src="assets/images/QuoteIcon.svg">
+                        <img class="QuoteOrange" id="QuoteOrange" src="assets/images/QuoteIconOrage.svg">
+                        <img class="Sofa" id="Sofa" src="assets/images/User/Sofa.svg">
                     </div>
 
                     <!-- Arrow button -->
@@ -667,214 +662,75 @@
         </div>
 
         <!-- Foooter -->
-        <footer style="background-color: #5c59d4; width: 100%;">
-            <div
-                style="
-                    padding: 129px 153px 60px 154px;
-                    background-color: #f2a156;
-                "
-            >
-                <div style="display: flex">
-                    <div
-                        class="title-font"
-                        style="
-                            font-size: 34px;
-                            color: white;
-                            width: 426px;
-                            line-height: 42px;
-                            margin-right: 40px;
-                        "
-                    >
-                        Subscribe to get attractive offers on our products
-                    </div>
-                    <div
-                        style="
-                            width: 667px;
-                            height: 82px;
-                            background-color: var(--custom-graywhite-color);
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                        "
-                    >
-                        <input
-                            class="content-font"
-                            type="text"
-                            placeholder="E.g. youremail@mail.com"
-                            style="
-                                margin-left: 24px;
-                                height: 30px;
-                                width: 60%;
-                                border: 0px;
-                                background-color: var(--custom-graywhite-color);
-                                font-size: 20px;
-                            "
-                        />
-                        <button
-                            class="title-font"
-                            type="button"
-                            style="
-                                width: 163px;
-                                height: 54px;
-                                padding: 12px 28px;
-                                background-color: #5c59d4;
-                                margin-right: 14px;
-                                font-weight: bold;
-                                font-size: 22px;
-                                border: 0px;
-                                color: white;
-                            "
-                        >
-                            Subscribe
-                        </button>
-                    </div>
+        <footer>
+            <div class="subscribe">
+                <div>
+                    Subscribe to get attractive offers on our products
+                </div>
+                <div>
+                    <input type="text" placeholder="E.g. youremail@mail.com"/>
+                    <button type="button">
+                        Subscribe
+                    </button>
                 </div>
             </div>
-            <div style="padding: 80px 96px">
-                <div
-                    style="
-                        margin-bottom: 24px;
-                        padding-bottom: 78px;
-                        border-bottom: 1px solid var(--custom-graywhite-color);
-                        display: flex;
-                    "
-                >
-                    <div style="width: 219px; margin-right: 157px">
-                        <img src="assets/images/Logo.svg" style="margin-bottom: 28px"/>
-                        <div
-                            class="content-font"
-                            style="
-                                font-size: 18px;
-                                color: var(--custom-graywhite-color);
-                                line-height: 26px;
-                                letter-spacing: -0.3px;
-                            "
-                        >
+
+            <div class="footer-info">
+                <!-- Logo and list -->
+                <div>
+                    <div class="logo">
+                        <img src="assets/images/Logo.svg"/>
+                        <div>
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry.
                         </div>
                     </div>
-                    <div
-                        style="
-                            width: 764px;
-                            display: flex;
-                            justify-content: space-between;
-                        "
-                    >
-                        <div style="height: 100%">
-                            <div
-                                class="title-font"
-                                style="
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    color: var(--custom-graywhite-color);
-                                    margin-bottom: 16px;
-                                "
-                            >
+                    <div class="footer-list">
+                        <div>
+                            <!-- Category -->
+                            <div>
                                 Category
                             </div>
-                            <div
-                                class="content-font"
-                                style="
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    color: var(--custom-graywhite-color);
-                                    font-size: 16px;
-                                    align-content: space-between;
-                                "
-                            >
+                            <div>
                                 <div>Living Room</div>
                                 <div>Bed Rom</div>
                                 <div>Kitchen</div>
                                 <div>bath Room</div>
                             </div>
                         </div>
-                        <div style="height: 100%">
-                            <div
-                                class="title-font"
-                                style="
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    color: var(--custom-graywhite-color);
-                                    margin-bottom: 16px;
-                                "
-                            >
+
+                        <!-- Popular product -->
+                        <div>
+                            <div>
                                 Popular Product
                             </div>
-                            <div
-                                class="content-font"
-                                style="
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    color: var(--custom-graywhite-color);
-                                    font-size: 16px;
-                                    align-content: space-between;
-                                "
-                            >
+                            <div>
                                 <div>Single Sofa Black</div>
                                 <div>Wooden Bookcase</div>
                                 <div>Wooden Chair</div>
                                 <div>Luxury White Bed</div>
                             </div>
                         </div>
-                        <div style="height: 100%">
-                            <div
-                                class="title-font"
-                                style="
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    color: var(--custom-graywhite-color);
-                                    margin-bottom: 16px;
-                                "
-                            >
+
+                        <!-- Sitemap -->
+                        <div>
+                            <div>
                                 Sitemap
                             </div>
-                            <div
-                                class="content-font"
-                                style="
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    color: var(--custom-graywhite-color);
-                                    font-size: 16px;
-                                    align-content: space-between;
-                                "
-                            >
+                            <div>
                                 <div>Product</div>
                                 <div>Services</div>
                                 <div>Article</div>
                                 <div>About Us</div>
                             </div>
                         </div>
-                        <div style="height: 100%">
-                            <div
-                                class="title-font"
-                                style="
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    color: var(--custom-graywhite-color);
-                                    margin-bottom: 16px;
-                                "
-                            >
+
+                        <!-- Follow us -->
+                        <div>
+                            <div>
                                 Follow Us
                             </div>
-                            <div
-                                class="content-font"
-                                style="
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    color: var(--custom-graywhite-color);
-                                    font-size: 16px;
-                                    align-content: space-between;
-                                "
-                            >
+                            <div>
                                 <div>Facebook</div>
                                 <div>Instagram</div>
                                 <div>TikTok</div>
@@ -883,15 +739,9 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="content-font"
-                    style="
-                        font-size: 14px;
-                        color: var(--custom-graywhite-color);
-                        text-align: left;
-                        line-height: 22px;
-                    "
-                >
+
+                <!-- Copyright -->
+                <div>
                     © 2023 by Logo Furniture. All rights reserved.
                 </div>
             </div>
