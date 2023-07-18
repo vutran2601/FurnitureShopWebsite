@@ -68,3 +68,11 @@ for (let button of furnitureGalleryButtons) {
     });
 }
 // END
+
+const firstBottomCustomerReviewContent = document.querySelector(".bottom-customer-review-item:first-child")
+const leftArrow = document.getElementById("arrow-left");
+const rightArrow = document.getElementById("arrow-right");
+leftArrow.addEventListener("click", function () {
+    const currentMarginLeft = firstBottomCustomerReviewContent.style.marginLeft;
+   console.log(currentMarginLeft);
+})

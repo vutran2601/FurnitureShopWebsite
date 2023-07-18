@@ -1,0 +1,570 @@
+@media only screen and (max-width: 420px) {
+    html, body {
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+    .header {
+        padding: 5%;
+    }
+
+    header > img:first-child {
+        scale: 0.7;
+    }
+
+    .nav-bar-menu {
+        display: none;
+    }
+
+    .nav-bar-icon {
+        display: none;
+    }
+
+    .header > img:last-child {
+        display: block;
+    }
+
+    .content-page {
+        margin-top: 43px;
+    }
+
+    .feature {
+        margin-bottom: 42px;
+    }
+
+    .feature-title {
+        max-width: 293px;
+        width: 73.25%;
+    }
+
+    .feature-title > div:first-child {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+
+    .feature-title > div:last-child {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 50px;
+        max-width: fit-content;
+    }
+
+    .feature-search {
+        max-width: 281px;
+        max-height: 45px;
+        height: fit-content;
+        width: fit-content;
+        padding: 14px 14.27px 14px 13.17px;
+        margin-bottom: 43px;
+    }
+
+    .feature-search > div:first-child {
+        max-width: 281px;
+        width: fit-content;
+    }
+
+    .feature-search > div:first-child > img {
+        width: 13.17px;
+        height: 13.17px;
+        margin-right: 7.68px;
+    }
+
+    .feature-search > div:first-child > input {
+        height: 17px;
+        font-size: 11px;
+    }
+
+    .feature-search > button {
+        width: 72.73px;
+        height: 30.07px;
+        padding: 6.59px 15.37px;
+        font-size: 12.07px;
+    }
+
+    .feature-images {
+        margin-bottom: 43px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        overflow-x: auto;
+    }
+
+    .feature-images > img:first-child {
+        width: fit-content;
+        height: 160px;
+    }
+
+    .feature-images > img:nth-child(2) {
+        width: fit-content;
+        height: 160px;
+    }
+
+    .feature-images > img:nth-child(3) {
+        width: fit-content;
+        height: 160px;
+    }
+
+    .feature-images > img:last-child {
+        width: fit-content;
+        height: 160px;
+    }
+
+    .branch-logos {
+        width: 338px;
+    }
+
+    .branch-logos img {
+        width: 50px;
+        height: 12px;
+        filter: brightness(75%) saturate(0);
+        opacity: 0.5;
+    }
+
+    .product-page {
+        width: 340.39px;
+        margin-bottom: 42px;
+    }
+
+    .product-title {
+        width: 281px;
+        margin-bottom: 32px;
+    }
+
+    .product-title > div:first-child {
+        font-size: 10px;
+        line-height: 13.6px;
+        padding: 2.1px 12.58px;
+        margin-bottom: 9.96px;
+    }
+
+    .product-title > div:nth-child(2) {
+        font-size: 20px;
+        line-height: 29.3px;
+        margin-bottom: 7.86px;
+    }
+
+    .product-title > div:nth-child(3) {
+        font-size: 10px;
+        line-height: 13.6px;
+        width: 236.34px;
+    }
+
+    .product-content {
+        grid-gap: 12px;
+        row-gap: 11px;
+        height: auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .product-item > div:first-child {
+        top: 11.7px;
+        left: 10.68px;
+        font-size: 8.94px;
+        line-height: 13.4px;
+        padding: 1.12px 4.47px;
+    }
+
+    .product-item-image {
+        padding-top: 6.14px;
+        padding-left: 6.14px;
+        padding-right: 6.7px;
+    }
+
+    .product-item-image > img {
+        width: 151.35px;
+        height: 167.55px;
+        margin: 0px;
+    }
+
+    .product-item-image > div {
+        margin-top: 12.85px;
+        margin-bottom: 10.57px;
+    }
+
+    .product-item-image > div > img {
+        width: 13.4px;
+        height: 13.4px;
+    }
+
+    .product-item-image > div > div:nth-child(2) {
+        font-size: 8.94px;
+        line-height: 13.4px;
+    }
+
+    .product-item-name {
+        margin-top: 12.4px;
+        margin-bottom: 12.92px;
+    }
+
+    .product-item-name > div:first-child {
+        font-size: 11.7px;
+        line-height: 15.6px;
+        margin-bottom: 5.11px;
+    }
+
+    .product-item-name > div:nth-child(2) > div:first-child {
+        margin-right: 7.82px;
+        font-size: 8.94px;
+        line-height: 13.4px;
+    }
+
+    .product-item-name > div:nth-child(2) > div:last-child {
+        font-size: 10.05px;
+        line-height: 14.5px;
+    }
+
+    .customer-reviews {
+        padding: 22.96px;
+    }
+
+    .customer-reviews > div:first-child {
+        width: 236.34px;
+        margin-bottom: 27.82px;
+    }
+
+    .customer-reviews > div:nth-child(2) {
+        gap: 8.35px;
+    }
+
+    .customer-reviews-item {
+        width: 216.69px !important;
+        padding: 14.61px;
+    }
+
+    .customer-reviews-item > div:first-child > img:first-child {
+        display: none;
+    }
+
+    .customer-reviews-item > div:first-child > img:nth-child(2) {
+        display: block;
+    }
+    
+    .customer-reviews-item > div:nth-child(2) {
+        font-size: 7.5px;
+        line-height: 11px;
+        margin-top: 9.74px;
+        margin-bottom: 9.74px;
+    }
+
+    .customer-info > div > img {
+        width: 15.3px;
+        height: 15.3px;
+    }
+
+    .customer-info > img {
+        width: 45.56px;
+        height: 8px;
+    }
+
+    .customer-info > div > img {
+        margin-right: 4.87px;
+    }
+
+    .customer-info > div > div:last-child {
+        font-size: 6.26px;
+        line-height: 10px;
+    }
+
+    .furniture-gallery {
+        padding: 42px 25.65px;
+    }
+
+    .shop-now-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-now-menu-item {
+        width: 340.71px;
+        height: 153.32px;
+    }
+
+    .shop-now-menu-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .shop-now-menu-item > div:first-child {
+        margin-top: 42.44px;
+        margin-bottom: 36.48px;
+        margin-left: 34.07px;
+    }
+
+    .shop-now-menu-item > div:first-child > div {
+        margin-bottom: 11.18px;
+        font-size: 20.44px;
+        line-height: 27.3px;
+    }
+
+    .shop-now-menu-item > div:first-child > button {
+        padding: 5.11px 15.33px;
+        font-size: 17.4px;
+        line-height: 23.8px;
+    }
+
+    .shop-now-menu-item > img {
+        scale: 0.8;
+        right: -10px;
+        top: -18px;
+    }
+
+    .furniture-gallery-content {
+        margin-top: 42px;
+    }
+
+    .furniture-gallery-content > div:first-child {
+        width: 236.34px;
+        margin-bottom: 25px;
+    }
+
+    .furniture-gallery-button {
+        width: 100%;
+        margin-bottom: 25px;
+        height: fit-content;
+    }
+
+    .furniture-gallery-button > button {
+        padding: 1% 2%;
+        font-size: 9.77px;
+        line-height: 13.7px;
+        border-radius: 15.63px;
+    }
+
+    .furniture-gallery-button > button > img {
+        width: 11.72px;
+        height: 11.72px;
+        margin-right: 6.84px;
+    }
+
+    .furniture-gallery-images {
+        gap: 2%;
+    }
+
+    .furniture-gallery-images > img:first-child {
+        width: 36.9%;
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+
+    .furniture-gallery-images > img:nth-child(2) {
+        display: none;
+    }
+
+    .furniture-gallery-images > img:nth-child(3) {
+        width: 60.4%;
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+
+    .furniture-gallery-images > img:nth-child(4) {
+        width: 60.4%;
+        height: fit-content;
+    }
+
+    .furniture-gallery-images > img:nth-child(5) {
+        display: none;
+    }
+
+    .furniture-gallery-images> img:last-child {
+        width: 36.9%;
+        height: fit-content;
+    }
+
+    .bottom-review {
+        padding: 28px 67px 138.22px 26px;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+
+    .bottom-customer-review {
+        margin: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        height: fit-content;
+    }
+
+    .bottom-customer-review-content {
+        width: 297px;
+        height: fit-content;
+        padding-top: 37px;
+        position: relative;
+    }
+
+    .bottom-customer-review-item {
+        width: 100%;
+        margin-bottom: 11.49px;        
+    }
+
+    .bottom-customer-review-item > div:first-child {
+        margin-bottom: 12.35px;   
+    }
+    
+    .bottom-customer-review-item > div:first-child > img {
+        margin-right: 8.04px;   
+        width: 25.27px;
+        height: 25.27px;     
+    }
+
+    .bottom-customer-review-item > img {
+        margin-right: 8.04px;
+        width: 75.24px;
+        height: 13.21px;         
+    }
+
+    .bottom-customer-review-item > div:nth-child(2) {
+        font-size: 7.5px;
+        line-height: 11px;
+        margin-bottom: 11.49px;
+    }
+
+    .bottom-customer-review-content > div:nth-child(2) {
+        font-size: 7.5px;
+        line-height: 11px;
+        margin-bottom: 11.49px;
+    }
+
+    .bottom-customer-review-content > img {
+        width: 75.24px;
+        height: 13.21px;
+    }
+
+    .bottom-review-customer-name > div:first-child {
+        font-size: 10px;
+        line-height: 13.8px;
+    }
+
+    .bottom-review-customer-name > div:nth-child(2) {
+        font-size: 10px;
+        line-height: 12.6px;
+    }
+
+    .Quote {
+        display: none;
+    }
+
+    .QuoteOrange {
+        display: block;
+        position: absolute;
+        right: 9.33px;
+        top: 6px;
+        width: 63.67px;
+        height: 45px;
+    }
+
+    .Sofa {
+        right: -36.68px;
+        top: 129.41px;
+        width: fit-content;
+        height: 242.38px;
+    }
+
+    .our-furniture-review {
+        margin-top: 0px;
+        width: 199.3px;
+    }
+
+    .our-furniture-review > div:first-child {
+        margin-bottom: 11.3px;
+    }
+
+    .our-furniture-review > div:nth-child(2) {
+        margin-bottom: 9px;
+    }
+
+    .arrow-button {
+        width: 50.54px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .arrow-button > div {
+        width: 18.38px;
+        height: 18.38px;
+    }
+
+    .arrow-button > div > img {
+        width: 18.38px;
+        height: 18.38px;
+    }
+
+    .subscribe {
+        padding: 79px 25.77px 45px 25.28px;
+        flex-direction: column;
+    }
+
+    .subscribe > div:first-child {
+        font-size: 16.06px;;
+        width: 201.17px;
+        line-height: 19.8px;
+        margin-right: 0px;
+        margin-bottom: 18.08px;
+    }
+
+    .subscribe > div:last-child {
+        width: 100%;
+        height: 41.92px;
+    }
+
+    .subscribe > div:last-child > input {
+        margin-left: 12.27px;
+        height: 30px;
+        width: 60%;
+        font-size: 10.22px;
+    }
+
+    .subscribe > div:last-child > button {
+        width: 83.63px;
+        height: 28.27px;
+        padding: 6.13px 14.31px;
+        font-size: 11.25px;
+        margin-right: 6.85px;
+    }
+
+    .footer-info {
+        padding: 44px 47px 28px 27px;
+    }
+
+    .footer-info > div:first-child {
+        margin-bottom: 21px;
+        padding-bottom: 37px;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 59px;
+    }
+
+    .logo > img:first-child {
+        display: none;
+    }
+
+    .logo > img:nth-child(2) {
+        display: block;
+        margin-bottom: 14.31px;
+    }
+
+    .logo > div {
+        font-size: 14px;
+        line-height: auto;
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: space-between;
+        gap: 42px;
+    }
+
+    .footer-list > div {
+    height: fit-content;
+    }
+
+    .footer-list > div > div:last-child {
+        gap: 12px;
+    }
+}
