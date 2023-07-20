@@ -227,6 +227,12 @@
 
     .customer-reviews > div:nth-child(2) {
         gap: 8.35px;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .customer-reviews > div:nth-child(2) > div:last-child {
+        display: none;
     }
 
     .customer-reviews-item {
@@ -393,7 +399,7 @@
     }
 
     .bottom-customer-review-item {
-        width: 100%;
+        width: 297px;
         margin-bottom: 11.49px;        
     }
 

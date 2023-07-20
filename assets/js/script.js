@@ -69,10 +69,55 @@ for (let button of furnitureGalleryButtons) {
 }
 // END
 
-const firstBottomCustomerReviewContent = document.querySelector(".bottom-customer-review-item:first-child")
+/// Handle switch for customer review
+const customerReviewSliderButtons = document.querySelectorAll(
+    ".customer-reviews > div:nth-child(2) > div:last-child> button"
+);
+for (let button of customerReviewSliderButtons) {
+    button.addEventListener("click", function () {
+        // Deselect all other buttons
+        customerReviewSliderButtons.forEach(function (otherButton) {
+            if (otherButton !== this) {
+                otherButton.classList.remove("selected");
+            }
+        });
+
+        // Select this button
+        this.classList.add("selected");
+    });
+}
+const customerReviewSlider = document.querySelector(
+    ".customer-reviews > div:nth-child(2)"
+);
+const review1_Button = document.getElementById("review1");
+review1_Button.addEventListener("click", function () {
+    customerReviewSlider.style.marginLeft = "1300px";
+});
+const review2_Button = document.getElementById("review2");
+review2_Button.addEventListener("click", function () {
+    customerReviewSlider.style.marginLeft = "0px";
+});
+const review3_Button = document.getElementById("review3");
+review3_Button.addEventListener("click", function () {
+    customerReviewSlider.style.marginLeft = "-1300px";
+});
+// END
+
+
+// Handle bottom review slider
+const bottomCustomerReviewContent = document.querySelector(".bottom-customer-review-content > div")
 const leftArrow = document.getElementById("arrow-left");
 const rightArrow = document.getElementById("arrow-right");
-leftArrow.addEventListener("click", function () {
-    const currentMarginLeft = firstBottomCustomerReviewContent.style.marginLeft;
-   console.log(currentMarginLeft);
+rightArrow.addEventListener("click", function () {
+    const screenWidth = window.innerWidth
+    const currentMarginLeft = parseInt(bottomCustomerReviewContent.style.marginLeft);
+    if (currentMarginLeft === (screenWidth > 420 ? -1078 : -539)) return
+    bottomCustomerReviewContent.style.marginLeft = (currentMarginLeft - (screenWidth > 420 ? 539 : 297)) + 'px'
 })
+leftArrow.addEventListener("click", function () {
+    const screenWidth = window.innerWidth
+    const currentMarginLeft = parseInt(bottomCustomerReviewContent.style.marginLeft);
+    if (currentMarginLeft === 0) return
+    bottomCustomerReviewContent.style.marginLeft = (currentMarginLeft + (screenWidth > 420 ? 539 : 297)) + 'px'
+})
+// END

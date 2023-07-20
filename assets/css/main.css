@@ -344,18 +344,51 @@ html, body {
 .customer-reviews > div:nth-child(2) {
     display: grid;
     grid-template-columns: auto auto auto;
+    width: fit-content;
     align-items: center;
     gap: 24px;
     transition: 1.3s ease-in-out;
-    width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
+}
+
+.customer-reviews > div:nth-child(2) > div:last-child {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    left: 48%;
+    bottom: 3%;
+
+    @media only screen and (max-width: 400px) {
+        width: 50px;
+    }
+}
+
+.customer-reviews > div:nth-child(2) > div:last-child> button {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c6c6c6;
+    padding: 0px;
+    border: 0px;
+
+    @media only screen and (max-width: 400px) {
+        width: 7px;
+        height: 7px;
+        border-radius: 7px;
+    }
+}
+
+.customer-reviews > div:nth-child(2) > div:last-child > button.selected {
+    background-color: #5c59d4;
 }
 
 .customer-reviews-item {
     background-color: white;
     width: 623px;
     padding: 42px;
-    
+    height: max-content;
+    box-sizing: border-box;
 }
 
 .customer-reviews-item > div:first-child > img:nth-child(2) {
@@ -532,17 +565,19 @@ html, body {
 
 .bottom-customer-review-content {
     width: 539px;
+    overflow-x: hidden;
+}
+
+.bottom-customer-review-content > div {
     display: grid;
     grid-template-columns: auto auto auto;
-    overflow: hidden;
+    align-items: center;
+    transition: 1.3s ease-in-out;
+    overflow-x: hidden;
 }
 
 .bottom-customer-review-item {
     width: 539px;
-}
-
-.bottom-customer-review-item:first-child {
-    
 }
 
 .bottom-customer-review-item > div:first-child {
@@ -621,7 +656,7 @@ html, body {
 .arrow-button {
     position: absolute;
     top: 1px;
-    right: -18px;
+    right: 0px;
     width: 88px;
     display: flex;
     justify-content: space-between;
