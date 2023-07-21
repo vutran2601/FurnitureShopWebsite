@@ -30,9 +30,9 @@ html, body {
 .nav-bar-menu {
     margin: 0 auto;
     font-size: 20px;
-    width: 31%;
     display: flex;
     justify-content: space-between;
+    gap: 52px;
 }
 
 .nav-bar-menu > div {
@@ -163,7 +163,7 @@ html, body {
     margin-bottom: 76px;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    gap: 24px;
 }
 
 .feature-images > img:not(:last-child) {

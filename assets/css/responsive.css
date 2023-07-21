@@ -86,9 +86,9 @@
 
     .feature-images {
         margin-bottom: 43px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow-x: auto;
+        width: 100%;
+        gap: 0px;
+        overflow-x: scroll;
     }
 
     .feature-images > img:first-child {
